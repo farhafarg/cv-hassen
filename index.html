@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore Hassan Ragab's portfolio, a frontend developer with expertise in Vue.js, JavaScript, HTML5, and CSS. Discover creative projects, responsive web design, and user-focused solutions tailored for innovative applications."
+    />
+    <meta name="author" content="Hassan Ragab" />
+    <meta
+      name="keyword"
+      content=" Hassan Ragab, frontend developer, Vue.js, JavaScript, HTML5, CSS, web development, responsive design, SCSS, creative web projects, UI/UX, portfolio"
+    />
+    <title>Hassan Ragab</title>
+    <link rel="shortcut icon" href="assets/images/main.jpG" type="image/x-icon">
+    <style>
+      #loader-body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: var(--background-color);
+        display: grid;
+        place-items: center;
+        transition: 0.5s;
+      }
+    
+.landing-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d3336;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader{
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(17, 20, 163);
+    animation: smokeOut 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px rgb(17, 20, 163),
+    0 0 12px rgb(17, 20, 163),
+    0 0 15px rgb(17, 20, 163);
+  }
+  .loader:before {
+    content: "Z e r o";
+  }
+
+  @keyframes smokeOut {
+    100% {
+      opacity: 0.08;
+      filter: blur(5px);
+      letter-spacing: 4px;
+    }
+  }
+
+    </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" defer="defer" />
+    <link rel="stylesheet" href="assets/css/animate.css" async />
+    <link rel="stylesheet" href="assets/css/style.css" async />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"
+      async
+    ></script>
+  </head>
+  <body>
+   <div class="landing-loader">
+      <span class="loader"></span></div>
+    <script>
+    
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".landing-loader");
+    document.body.style.overflow = "hidden";
+  
+    setTimeout(() => {
+      loader.remove();
+      document.body.style.overflow = "auto";
+    }, 800)
+  });
+    </script>
+    <a class="whatsapp" href="https://wa.me/+201116354271" target="_blank"
+      ><img
+        src="assets/images/social/whatsapp-green.svg"
+        loading="lazy"
+        alt="whatsapp-icon"
+        width="1"
+        height="1"
+    /></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto d-flex mb-2 mb-lg-0">
+            <li class="nav-item wow fadeInLeft" data-wow-delay="3s">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item wow fadeInLeft" data-wow-delay="3s">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item wow fadeInRight" data-wow-delay="3s">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item wow fadeInRight" data-wow-delay="3s">
+              <a class="nav-link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+    </nav>
+    <main>
+      <header id="home">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="text col-lg-6 col-md-7 col-12">
+              <h2 class="wow fadeInRight" data-wow-delay="3s">Hello, I'm</h2>
+              <p class="text-about wow fadeInRight" data-wow-delay="3.1s">
+                I'am Haasan Frontend Developer and freelancer, I blend creativity
+                with technical expertise to deliver sleek, responsive designs
+                that elevate brands and captivate users.
+              </p>
+              <div class="social d-flex">
+                <a
+                  href="https://www.facebook.com/a7ntka?mibextid=ZbWKwL"
+                  class="social-icon wow fadeInRight"
+                  data-wow-delay="3s"
+                  ><div class="icon">
+                    <img
+                      src="assets/images/social/facebook.svg"
+                      loading="lazy"
+                      alt="icon"
+                      width="1"
+                      height="1"
+                    /></div></a
+                ><a
+                  href="https://wa.me/+201116354271"
+                  class="social-icon wow fadeInRight"
+                  data-wow-delay="3.4s"
+                  ><div class="icon">
+                    <img
+                      src="assets/images/social/whatsapp.svg"
+                      loading="lazy"
+                      alt="icon"
+                      width="1"
+                      height="1"
+                    /></div></a
+                ><a
+                  href="https://github.com/HassanRagab494"
+                  class="social-icon wow fadeInRight"
+                  data-wow-delay="3.6s"
+                  ><div class="icon">
+                    <img
+                      src="assets/images/social/github.svg"
+                      loading="lazy"
+                      alt="icon"
+                      width="1"
+                      height="1"
+                    /></div></a
+                ><a
+                  href="https://www.instagram.com/hassana7ntka?igsh=aDJhYmkzOGNxZjY1"
+                  class="social-icon wow fadeInRight"
+                  data-wow-delay="3.8s"
+                  ><div class="icon">
+                    <img
+                      src="assets/images/social/instagram.svg"
+                      loading="lazy"
+                      alt="icon"
+                      width="1"
+                      height="1"
+                    /></div
+                ></a>
+              </div>
+              <div class="btns">
+                <a
+                  class="cv-btn wow fadeInUp"
+                  href="./assets/images/cv.pdf"
+                  download="cv.pdf"
+                  data-wow-delay="3.3s"
+                  >Download CV</a
+                >
+                <a
+                  class="hire wow fadeInUp"
+                  href="#contact"
+                  data-wow-delay="3.3s"
+                  >Hire me</a
+                >
+                <img
+                  class="hand"
+                  src="assets/images/hand.webp"
+                  loading="lazy"
+                  alt="hand animation"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+              <div class="circle circle3"></div>
+            </div>
+            <div class="main-image col-lg-4 col-md-5 col-12">
+              <div class="box-image">
+                <span
+                  class="wow fadeInLeftBig"
+                  data-wow-delay="3s"
+                  data-wow-duration="1.5s"
+                ></span>
+                <span
+                  class="wow fadeInUpBig"
+                  data-wow-delay="3s"
+                  data-wow-duration="1.5s"
+                ></span>
+                <span
+                  class="wow fadeInRightBig"
+                  data-wow-delay="3s"
+                  data-wow-duration="1.5s"
+                ></span>
+                <span
+                  class="wow fadeInDownBig"
+                  data-wow-delay="3s"
+                  data-wow-duration="1.5s"
+                ></span>
+                <div>
+                  <img
+                    src="assets/images/main.jpG"
+                    loading="lazy"
+                    alt="main image"
+                    class="wow fadeInUp"
+                    data-wow-delay="3s"
+                    data-wow-duration="2s"
+                    width="420"
+                    height="460"
+                  />
+                </div>
+                <div class="bottom-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="wow fadeInUp "  data-aos="fade-up"
+          data-aos-duration="3000">About me</h2>
+          <div class="row">
+            <div  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="about-text col-lg-6 col-md-10 col-12">
+              <p class="detailes wow fadeInUp">
+                <b>Hello,</b> my name is Hassan, and I am a graduate of Delta
+                Academy with a degree in Information Systems. I have extensive
+                experience in front-end development.
+              </p>
+              <div class="available wow fadeInUp">
+                <div class="box wow fadeInUp">
+                  <h5>Available for :</h5>
+                  <div>
+                    <p>Freelance</p>
+                    <p>Full time job</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info wow fadeInUp">
+                <h5><span>+2</span> Years of experience.</h5>
+                <h5><span>+15</span> Projects.</h5>
+                <h5><span>+6</span> Happy Clients.</h5>
+              </div>
+            </div>
+            <div  data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" id="myImage" class="box-img col-lg-5 col-md-12 col-12 wow fadeInUp">
+              <img
+                
+                src="assets/images/coding.webp"
+                loading="lazy"
+                alt="coding animation"
+                width="400"
+                height="400"
+              />
+          
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2   data-aos="fade-up"
+          data-aos-duration="3000"class="wow fadeInUp">Skills</h2>
+          <div data-aos="zoom-out-down" class="col-12 tag-canvas"></div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2  data-aos="fade-up"
+          data-aos-duration="3000">Projects</h2>
+          <div class="row row-projects">
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img 
+                src="./assets/images/projects/IMG-20241012-WA0020.jpg"
+                loading="lazy"
+                alt="project 1"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+            
+                src="./assets/images/projects/IMG-20241012-WA0024.jpg"
+                loading="lazy"
+                alt="project 2"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+          
+                src="./assets/images/projects/IMG-20241012-WA0025.jpg"
+                loading="lazy"
+                alt="project 3"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+            
+                src="./assets/images/projects/IMG-20241012-WA0026.jpg"
+                loading="lazy"
+                alt="project 4"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+            
+                src="./assets/images/projects/IMG-20241012-WA0027.jpg"
+                loading="lazy"
+                alt="project 5"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+      
+                src="./assets/images/projects/IMG-20241012-WA0028.jpg"
+                loading="lazy"
+                alt="project 6"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+              <img
+            
+                src="./assets/images/projects/IMG-20241012-WA0029.jpg"
+                loading="lazy"
+                alt="project 6"
+                width="400"
+                height="300"
+              />
+            </div>
+          
+          
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2  data-aos="fade-up"
+          data-aos-duration="3000">Contacts</h2>
+          <div class="row">
+            <div
+          
+             class="contact-img col-lg-5 col-md-11 col-12 wow fadeInUp">
+              <img
+
+                src="assets/images/person.webp"
+                
+                loading="lazy"
+                alt="contact img"
+                width="600"
+                height="600"
+              />
+              <div class="link link1">
+                <div class="icon">
+                  <img
+                    src="assets/images/social/whatsapp-green.svg"
+                    loading="lazy"
+                    alt="whatsapp-icon"
+                  />
+                </div>
+                <p>+201116354271</p>
+                <a href="https://wa.me/+201116354271" target="_blank"></a>
+              </div>
+              <div class="link link2">
+                <div class="icon">
+                  <img
+                    src="assets/images/social/gmail.svg"
+                    loading="lazy"
+                    alt="gmail-icon"
+                  />
+                </div>
+                <p>HassanRagab494@gmail.com</p>
+                <a href="HassanRagab494@gmail.com" target="_blank"></a>
+              </div>
+            </div>
+            <div class="contact-links col-lg-5 col-md-11 col-11 wow fadeInUp">
+              <h3 class="wow fadeInUp" id="contact">Contact Me</h3>
+              <form
+            
+                class="wow fadeInUp"
+              
+              >
+                <div class="wow fadeInUp">
+                  <label>Name:</label>
+                  <input type="text" name="name" placeholder="Name ..." />
+                </div>
+                <div class="wow fadeInUp">
+                  <label>Your email:</label>
+                  <input type="email" name="email" placeholder="Email ..." />
+                </div>
+                <div class="wow fadeInUp">
+                  <label>message:</label>
+                  <textarea name="message" placeholder="Message ..."></textarea>
+                </div>
+                <button class="wow fadeInUp" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div  class="row wow fadeInUp">
+          <h5 >
+            Dragon Code
+        
+          </h5>
+          <div  class="social d-flex">
+            <a href="https://www.facebook.com/a7ntka?mibextid=ZbWKwL" class="social-icon"
+              ><div class="icon">
+                <img
+                
+                  src="assets/images/social/facebook.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            >
+            <a href="https://wa.me/+201116354271" class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/images/social/whatsapp.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a href="https://github.com/HassanRagab494" class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/images/social/github.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a href="https://www.instagram.com/hassana7ntka?igsh=aDJhYmkzOGNxZjY1" class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/images/social/instagram.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="assets/js/matter.js" defer="defer"></script>
+    <script src="assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
